@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio demo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <section class="navbar-section">
+      <nav>
+        <h1>LOGO</h1>
+        <ul class="navlinks" data-visible="false">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">OurCases</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <i class="fa fa-bars menu-btn" aria-hidden="true"></i>
+      </nav>
+    </section>
+    <section class="home-page">
+      <div class="home-container">
+        <h1>
+          Alignment.<br />
+          Growth. <br />Relevance.
+        </h1>
+        <div class="home-items">
+          <div class="item-1">
+            <div class="items">
+              <i class="fa fa-mobile items-i" aria-hidden="true"></i>
+              <p>
+                <span
+                  >Click again or double click to start editing the text.</span
+                >
+              </p>
+            </div>
+            <div class="items">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <p>
+                <span
+                  >Click again or double click to start editing the text.</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="item-2">
+            <div class="items">
+              <i class="fa fa-picture-o" aria-hidden="true"></i>
+              <p>
+                <span
+                  >Click again or double click to start editing the text.</span
+                >
+              </p>
+            </div>
+            <div class="items">
+              <i class="fa fa-user items-i" aria-hidden="true"></i>
+              <p>
+                <span
+                  >Click again or double click to start editing the text.</span
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="owner-section">
+      <div class="owner-container">
+        <div class="text-button">
+          <h1>Hi! My name is Josh Perry</h1>
+          <button class="btn">I'M A DEVELOPER</button>
+        </div>
+        <img src="./images/img2.jpg" alt="" />
+      </div>
+    </section>
+    <section class="our-cases-section">
+      <div class="our-cases-container">
+        <h1>Our Cases</h1>
+        <p>
+          Working with Wonderful Creative Agency to create our website was a
+          pretty smooth operation. They shared our vision for the website and
+          helped us realise it and we couldn’t be more pleased with the results.
+        </p>
+        <div class="cases-image-container">
+          <div class="our-cases-images">
+            <img src="./images/img3.jpg" alt="" />
+            <img src="./images/img6.jpg" alt="" />
+            <img src="./images/img5.jpg" alt="" />
+            <img src="./images/img4.jpg" alt="" />
+            <img src="./images/img7.jpg" alt="" />
+            <img src="./images/img8.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".navlinks");
+      menuBtn.addEventListener("click", () => {
+        const visiblity = navLinks.getAttribute("data-visible");
+        console.log(visiblity);
+
+        if (visiblity === "false") {
+          navLinks.setAttribute("data-visible", "true");
+        } else if (visiblity === "true") {
+          navLinks.setAttribute("data-visible", "false");
+        }
+      });
+    </script>
+  </body>
+</html>
